@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+        <style>
+            pre {
+                font-family: 'Fira Code';
+                margin: 0;
+            }
+            #outer {
+                background-color: #abb8c3;
+                padding: 100px;
+            }
+            #inner {
+                margin: 0 auto;
+                background-color: #151718;
+                color: #ced1d0;
+                padding: 15px;
+                border-radius: 5px;
+                width: 60%;
+                max-width: 500px;
+                min-width: 300px;
+                box-shadow: 2px 10px 50px -10px black;
+            }
+            #header {
+                display: inline-flex;
+                padding-bottom: 15px;
+            }
+            .circle {
+                width: 15px;
+                height: 15px;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                margin-right: 7px;
+            }
+            .circle:last-child {
+                margin-right: 0;
+            }
+            .red-bg {
+                background-color: #ff5f56;
+            }
+            .yellow-bg {
+                background-color: #ffbd2e;
+            }
+            .green-bg {
+                background-color: #28c93f;
+            }
+
+            .code-statement {
+                color: #ff87ff;
+            }
+            .code-method {
+                color: #39c0ec;
+            }
+            .code-string {
+                color: #70da70;
+            }
+            .code-attribute {
+                color: #ff6161;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner">
+                <div id="header">
+                    <div class="circle red-bg"></div>
+                    <div class="circle yellow-bg"></div>
+                    <div class="circle green-bg"></div>
+                </div>
+                <div id="content">
+<pre>
+<span class="code-statement">if</span> exams[<span class="code-string">"numerik"</span>].<span class="code-attribute">passed</span>:
+    <span class="code-method">happy()</span>
+<span class="code-statement">else</span>:
+    <span class="code-method">exit</span>(EXIT_FAILURE)
+</pre>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
