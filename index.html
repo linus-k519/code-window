@@ -7,24 +7,26 @@
                 font-family: 'Fira Code';
                 margin: 0;
             }
-            #outer {
+            .outer {
                 background-color: #abb8c3;
                 padding: 10%;
             }
-            #inner {
+            .inner {
                 margin: 0 auto;
                 background-color: #151718;
                 color: #ced1d0;
-                padding: 15px;
                 border-radius: 5px;
                 width: 60%;
                 max-width: 500px;
                 min-width: 300px;
                 box-shadow: 2px 10px 50px -10px black;
             }
-            #header {
+            .header {
                 display: inline-flex;
-                padding-bottom: 15px;
+                padding: 15px;
+            }
+            .content {
+                padding: 5px 15px 15px 15px;
             }
             .circle {
                 width: 15px;
@@ -62,16 +64,16 @@
         </style>
     </head>
     <body>
-        <div id="outer">
-            <div id="inner">
-                <div id="header">
+        <div class="outer">
+            <div class="inner">
+                <div class="header">
                     <div class="circle red-bg"></div>
                     <div class="circle yellow-bg"></div>
                     <div class="circle green-bg"></div>
                 </div>
-                <div id="content">
+                <div class="content">
 <pre>
-<span class="code-statement">if</span> exams[<span class="code-string">"numerik"</span>].<span class="code-attribute">passed</span>:
+<span class="code-statement">if</span> exams[<span class="code-string">"numerics"</span>].<span class="code-attribute">passed</span>:
     <span class="code-method">happy()</span>
 <span class="code-statement">else</span>:
     <span class="code-method">exit</span>(EXIT_FAILURE)
